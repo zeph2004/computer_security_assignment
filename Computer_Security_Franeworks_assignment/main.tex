@@ -1,0 +1,63 @@
+\documentclass[
+    12pt,
+    a4paper,
+    oneside
+]{report}
+
+% Import all formatting and packages
+\input{preamble}
+
+\begin{document}
+
+
+\begin{document}
+
+%------------------------------------------------
+% Front Matter
+%------------------------------------------------
+
+\input{sections/titlepage}
+
+\pagenumbering{roman}
+
+\tableofcontents
+\clearpage
+
+\listoffigures
+\clearpage
+
+\listoftables
+\clearpage
+
+%------------------------------------------------
+% Main Matter
+%------------------------------------------------
+
+\pagenumbering{arabic}
+
+\onehalfspacing
+
+\input{sections/introduction}
+
+\input{sections/partA}
+
+\input{sections/partB}
+
+\input{sections/partC}
+
+\input{sections/partD}
+
+\input{sections/conclusion}
+
+%------------------------------------------------
+% Appendix
+%------------------------------------------------
+
+\printbibliography
+
+\appendix
+
+\input{sections/appendix}
+
+
+\end{document}
