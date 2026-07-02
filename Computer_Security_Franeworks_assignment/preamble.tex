@@ -1,5 +1,5 @@
 %====================================================
-% Packages
+% Page Layout
 %====================================================
 
 \usepackage{geometry}
@@ -10,9 +10,11 @@
     bottom=1in
 }
 
-\usepackage{graphicx}
+%====================================================
+% Graphics and Figures
+%====================================================
 
-\usepackage{booktabs}
+\usepackage{graphicx}
 
 \usepackage{float}
 
@@ -20,7 +22,40 @@
 
 \usepackage{subcaption}
 
+%====================================================
+% Tables
+%====================================================
+
+\usepackage{booktabs}
+
 \usepackage{array}
+
+\usepackage{tabularx}
+
+\usepackage{longtable}
+
+%====================================================
+% Landscape Pages
+%====================================================
+
+\usepackage{pdflscape}
+
+%====================================================
+% Code Listings
+%====================================================
+
+\usepackage{listings}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{red}
+}
 
 %====================================================
 % Typography
@@ -31,10 +66,14 @@
 \usepackage{setspace}
 
 %====================================================
-% Navigation and References
+% Colour
 %====================================================
 
 \usepackage{xcolor}
+
+%====================================================
+% Navigation and References
+%====================================================
 
 \usepackage[
     colorlinks=true,
@@ -44,8 +83,6 @@
 ]{hyperref}
 
 \usepackage[nameinlink]{cleveref}
-
-\usepackage{fancyhdr}
 
 %====================================================
 % Headers and Footers
@@ -74,7 +111,7 @@
 
 \hypersetup{
     pdftitle={Cybersecurity Frameworks Assignment},
-    pdfauthor={Zephaniah Bryson},
+    pdfauthor={Zephaniah Bryson Matekele},
     pdfsubject={Computer Security},
     pdfkeywords={ISO 27001,NIST CSF,COBIT 2019,Cybersecurity}
 }
